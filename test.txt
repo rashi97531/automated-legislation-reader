@@ -1,1 +1,81 @@
-Hello ALR Project
+"""
+CanLII API Test Script
+Tests the basic API endpoints we'll need for the ALR project.
+Replace YOUR_API_KEY with your actual key once you receive it.
+"""
+
+import requests
+import json
+
+# Replace this with your actual API key when you get it
+API_KEY = "YOUR_API_KEY"
+BASE_URL = "https://api.canlii.org/v1"
+
+def list_legislation_databases():
+    """List all legislation databases (federal, provincial, etc.)"""
+    url = f"{BASE_URL}/legislationBrowse/en/?api_key={API_KEY}"
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
+        print("=== Legislation Databases ===")
+        for db in data.get("legislationDatabases", [])[:10]:
+            print(f"  {db['databaseId']} - {db['name']} ({db['jurisdiction']})")
+    else:
+        print(f"Error: {response.status_code} - {response.text}")
+
+def search_legislation(database_id, query):
+    """Search for legislation within a specific database"""
+    url = f"{BASE_URL}/legislationBrowse/en/{database_id}/?api_key={API_KEY}"
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
+        print(f"\n=== Legislation in {database_id} ===")
+        for leg in data.get("legislations", [])[:10]:
+            print(f"  {leg['legislationId']} - {leg['title']}")
+    else:
+        print(f"Error: {response.status_code} - {response.text}")
+
+def get_case_citations(database_id, case_id):
+    """Get cases and legislation cited by a specific case"""
+    url = f"{BASE_URL}/caseCitator/en/{database_id}/{case_id}/citedLegislation?api_key={API_KEY}"
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
+        print(f"\n=== Legislation Cited by Case ===")
+        for leg in data.get("citedLegislations", [])[:10]:
+            print(f"  {leg['title']} - {leg['citation']}")
+    else:
+        print(f"Error: {response.status_code} - {response.text}")
+
+if __name__ == "__main__":
+    print("CanLII API Test Script")
+    print("=" * 40)
+    
+    if API_KEY == "YOUR_API_KEY":
+        print("\nWaiting for API key. Replace YOUR_API_KEY in this file once you receive it.")
+        print("\nHere's what this script will test:")
+        print("1. List all legislation databases (federal, provincial)")
+        print("2. Search for legislation within a database")
+        print("3. Get case citations (the key feature for cross-referencing)")
+    else:
+        list_legislation_databases()
+        search_legislation("cas", "cannabis")
+        get_case_citations("csc-scc", "2018scc16")
+```
+
+Save it, then run it in Git Bash:
+```
+python test_canlii.py
+```
+
+It will show a placeholder message since we don't have the key yet. Once you receive the key, you just swap `YOUR_API_KEY` and run it again.
+
+After running, commit it:
+```
+git add test_canlii.py
+```
+```
+git commit -m "ALR-27: added CanLII API test script"
+```
+```
+git push origin main
