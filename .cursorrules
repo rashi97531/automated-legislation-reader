@@ -1,0 +1,37 @@
+# Automated Legislation Reader - Cursor Rules
+
+## Project Context
+This is a Python-based legal research tool that retrieves Canadian legislation from CanLII, discovers related documents (regulations, amendments, case law), cross-references them using Anthropic's Opus 4.6, and produces a structured research package.
+
+## Code Style
+- Use Python 3.10+ with type hints
+- Follow PEP 8 conventions
+- Use descriptive function and variable names
+- Add docstrings to all functions and classes
+- Handle errors gracefully with try/except blocks and informative messages
+
+## Architecture
+- src/retrieval/ — CanLII API search and document retrieval
+- src/discovery/ — Related document discovery (regulations, amendments, case law)
+- src/analysis/ — Anthropic API cross-reference analysis
+- src/output/ — Research package formatting (6-section template)
+- src/pipeline/ — Agentic workflow orchestrator
+
+## Legal Analysis Rules
+- When analyzing legislation, always identify: definitions, obligations, penalties, and enforcement mechanisms
+- Always map section-level relationships between Acts and their implementing Regulations
+- Flag conflicts or gaps between related documents
+- Use standard Canadian legal citation format (e.g., "Cannabis Act, SC 2018, c 16, s. 12(1)")
+- Every claim must reference a specific section — no unsourced assertions
+
+## Output Format
+- Research packages follow a 6-section template:
+  1. Executive Summary
+  2. Document Inventory
+  3. Cross-Reference Map
+  4. Key Provisions Analysis
+  5. Obligations & Implications
+  6. Risks & Recommendations
+
+## Git Commit Convention
+- Always prefix commit messages with the Jira ticket key (e.g., "ALR-6: added search module")
