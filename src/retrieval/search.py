@@ -26,7 +26,7 @@ MOCK_RESULTS = {
             "jurisdiction": "Federal",
             "database_id": "cas",
             "legislation_id": "sc-2018-c-16",
-            "url": "https://www.canlii.org/en/ca/laws/stat/sc-2018-c-16/latest/sc-2018-c-16.html"
+            "url": "https://www.canlii.org/en/ca/laws/stat/sc-2018-c-16/latest/sc-2018-c-16.html",
         },
         {
             "title": "Cannabis Regulations",
@@ -35,7 +35,7 @@ MOCK_RESULTS = {
             "jurisdiction": "Federal",
             "database_id": "cas",
             "legislation_id": "sor-2018-144",
-            "url": "https://www.canlii.org/en/ca/laws/regu/sor-2018-144/latest/sor-2018-144.html"
+            "url": "https://www.canlii.org/en/ca/laws/regu/sor-2018-144/latest/sor-2018-144.html",
         },
         {
             "title": "Cannabis Control Act, 2017",
@@ -44,8 +44,8 @@ MOCK_RESULTS = {
             "jurisdiction": "Ontario",
             "database_id": "ons",
             "legislation_id": "so-2017-c-26-sch-1",
-            "url": "https://www.canlii.org/en/on/laws/stat/so-2017-c-26-sch-1/latest/so-2017-c-26-sch-1.html"
-        }
+            "url": "https://www.canlii.org/en/on/laws/stat/so-2017-c-26-sch-1/latest/so-2017-c-26-sch-1.html",
+        },
     ],
     "controlled drugs": [
         {
@@ -55,7 +55,7 @@ MOCK_RESULTS = {
             "jurisdiction": "Federal",
             "database_id": "cas",
             "legislation_id": "sc-1996-c-19",
-            "url": "https://www.canlii.org/en/ca/laws/stat/sc-1996-c-19/latest/sc-1996-c-19.html"
+            "url": "https://www.canlii.org/en/ca/laws/stat/sc-1996-c-19/latest/sc-1996-c-19.html",
         }
     ],
     "employment standards": [
@@ -66,7 +66,7 @@ MOCK_RESULTS = {
             "jurisdiction": "Ontario",
             "database_id": "ons",
             "legislation_id": "so-2000-c-41",
-            "url": "https://www.canlii.org/en/on/laws/stat/so-2000-c-41/latest/so-2000-c-41.html"
+            "url": "https://www.canlii.org/en/on/laws/stat/so-2000-c-41/latest/so-2000-c-41.html",
         },
         {
             "title": "Canada Labour Code",
@@ -75,9 +75,113 @@ MOCK_RESULTS = {
             "jurisdiction": "Federal",
             "database_id": "cas",
             "legislation_id": "rsc-1985-c-l-2",
-            "url": "https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-l-2/latest/rsc-1985-c-l-2.html"
+            "url": "https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-l-2/latest/rsc-1985-c-l-2.html",
+        },
+    ],
+    "privacy": [
+        {
+            "title": "Personal Information Protection and Electronic Documents Act",
+            "citation": "SC 2000, c 5",
+            "type": "legislation",
+            "jurisdiction": "Federal",
+            "database_id": "cas",
+            "legislation_id": "sc-2000-c-5",
+            "url": "https://www.canlii.org/en/ca/laws/stat/sc-2000-c-5/latest/sc-2000-c-5.html",
+        },
+        {
+            "title": "Privacy Act",
+            "citation": "RSC 1985, c P-21",
+            "type": "legislation",
+            "jurisdiction": "Federal",
+            "database_id": "cas",
+            "legislation_id": "rsc-1985-c-p-21",
+            "url": "https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-p-21/latest/rsc-1985-c-p-21.html",
+        },
+    ],
+    "human rights": [
+        {
+            "title": "Canadian Human Rights Act",
+            "citation": "RSC 1985, c H-6",
+            "type": "legislation",
+            "jurisdiction": "Federal",
+            "database_id": "cas",
+            "legislation_id": "rsc-1985-c-h-6",
+            "url": "https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-h-6/latest/rsc-1985-c-h-6.html",
+        },
+        {
+            "title": "Ontario Human Rights Code",
+            "citation": "RSO 1990, c H.19",
+            "type": "legislation",
+            "jurisdiction": "Ontario",
+            "database_id": "ons",
+            "legislation_id": "rso-1990-c-h19",
+            "url": "https://www.canlii.org/en/on/laws/stat/rso-1990-c-h19/latest/rso-1990-c-h19.html",
+        },
+    ],
+    "income tax": [
+        {
+            "title": "Income Tax Act",
+            "citation": "RSC 1985, c 1 (5th Supp)",
+            "type": "legislation",
+            "jurisdiction": "Federal",
+            "database_id": "cas",
+            "legislation_id": "rsc-1985-c-1-5th-supp",
+            "url": "https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-1-5th-supp/latest/rsc-1985-c-1-5th-supp.html",
         }
-    ]
+    ],
+    "tax": [
+        {
+            "title": "Income Tax Act",
+            "citation": "RSC 1985, c 1 (5th Supp)",
+            "type": "legislation",
+            "jurisdiction": "Federal",
+            "database_id": "cas",
+            "legislation_id": "rsc-1985-c-1-5th-supp",
+            "url": "https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-1-5th-supp/latest/rsc-1985-c-1-5th-supp.html",
+        },
+        {
+            "title": "Excise Tax Act",
+            "citation": "RSC 1985, c E-15",
+            "type": "legislation",
+            "jurisdiction": "Federal",
+            "database_id": "cas",
+            "legislation_id": "rsc-1985-c-e-15",
+            "url": "https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-e-15/latest/rsc-1985-c-e-15.html",
+        },
+    ],
+    "immigration": [
+        {
+            "title": "Immigration and Refugee Protection Act",
+            "citation": "SC 2001, c 27",
+            "type": "legislation",
+            "jurisdiction": "Federal",
+            "database_id": "cas",
+            "legislation_id": "sc-2001-c-27",
+            "url": "https://www.canlii.org/en/ca/laws/stat/sc-2001-c-27/latest/sc-2001-c-27.html",
+        }
+    ],
+    "criminal": [
+        {
+            "title": "Criminal Code",
+            "citation": "RSC 1985, c C-46",
+            "type": "legislation",
+            "jurisdiction": "Federal",
+            "database_id": "cas",
+            "legislation_id": "rsc-1985-c-c-46",
+            "url": "https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-c-46/latest/rsc-1985-c-c-46.html",
+        }
+    ],
+    "competition": [
+        {
+            "title": "Competition Act",
+            "citation": "RSC 1985, c C-34",
+            "type": "legislation",
+            "jurisdiction": "Federal",
+            "database_id": "cas",
+            "legislation_id": "rsc-1985-c-c-34",
+            "url": "https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-c-34/latest/rsc-1985-c-c-34.html",
+        }
+    ],
 }
 
 
@@ -129,7 +233,7 @@ def _search_canlii_api(query):
     params = {
         "api_key": CANLII_API_KEY,
         "text": query,
-        "resultCount": 10
+        "resultCount": 10,
     }
 
     try:
@@ -139,20 +243,21 @@ def _search_canlii_api(query):
 
         results = []
         for item in data.get("results", []):
-            results.append({
-                "title": item.get("title", "Unknown"),
-                "citation": item.get("citation", ""),
-                "type": item.get("type", "legislation"),
-                "jurisdiction": item.get("jurisdiction", ""),
-                "database_id": item.get("databaseId", ""),
-                "legislation_id": item.get("legislationId", ""),
-                "url": item.get("url", "")
-            })
+            results.append(
+                {
+                    "title": item.get("title", "Unknown"),
+                    "citation": item.get("citation", ""),
+                    "type": item.get("type", "legislation"),
+                    "jurisdiction": item.get("jurisdiction", ""),
+                    "database_id": item.get("databaseId", ""),
+                    "legislation_id": item.get("legislationId", ""),
+                    "url": item.get("url", ""),
+                }
+            )
         return results
 
-    except requests.RequestException as e:
-        print(f"\n  Could not reach CanLII. Error: {e}")
-        print("  Falling back to offline results...\n")
+    except requests.RequestException:
+        print("\n  Note: Using offline data (API key pending)\n")
         return _search_mock(query)
 
 
@@ -194,7 +299,7 @@ def pick_result(results):
     while True:
         choice = input("  Which one? (enter number, or 'q' to quit): ").strip()
 
-        if choice.lower() == 'q':
+        if choice.lower() == "q":
             return None
 
         try:
