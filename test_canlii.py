@@ -26,3 +26,8 @@ if __name__ == "__main__":
         print("Waiting for API key. Replace YOUR_API_KEY once you receive it.")
     else:
         list_legislation_databases()
+```
+
+Save it (Ctrl + S), then in Git Bash:
+```
+python test_canlii.py
